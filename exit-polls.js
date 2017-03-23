@@ -137,7 +137,7 @@ var datasets = [
 ];
 
 var width = 800, height = 600;
-var xBorder = 40, yBorder = 40;
+var xBorder = 50, yBorder = 40;
 
 var xScale = d3.scaleLinear()
 	.domain([0, 1])
@@ -164,6 +164,23 @@ svg.append("g")
 svg.append("g")
 	.attr("transform", "translate(" + xBorder + ", " + yBorder + ")")
 	.call(yAxis);
+
+svg.append("text")
+	.attr("x", width / 2)
+	.attr("y", height - 12)
+	.attr("font-family", "sans-serif")
+	.attr("font-size", "10px")
+	.attr("text-anchor", "middle")
+	.text("household income percentile among electorate");
+
+svg.append("text")
+	.attr("x", 12)
+	.attr("y", height / 2)
+	.attr("font-family", "sans-serif")
+	.attr("font-size", "10px")
+	.attr("text-anchor", "middle")
+	.attr("transform", "rotate(90, 12, " + (height / 2) + ")")
+	.text("fraction of major-party vote for Democrat");
 
 function drawDataset(dataset, dataset_id, color) {
 	var line = d3.line()
