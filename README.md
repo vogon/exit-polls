@@ -12,15 +12,17 @@
 	{% raw %}
 	<form id="dataset-chooser">
 		{{#datasets}}
-			<input id="{{id}}" type="checkbox" value="false">
-			<label for="{{id}}">
-				<svg width="20" height="20">
-					<g fill="none" stroke-width="3">
-						<path class="label-line" stroke="rgba(0,0,0,0)" d="M0,10L20,10"></path>
-					</g>
-				</svg>
-				{{friendly}}
-			</label>
+			<div style="display: inline-block;">
+				<input id="{{id}}" type="checkbox" value="false">
+				<label for="{{id}}">
+					<svg width="20" height="20">
+						<g fill="none" stroke-width="3">
+							<path class="label-line" stroke="rgba(0,0,0,0)" d="M0,10L20,10"></path>
+						</g>
+					</svg>
+					{{friendly}}
+				</label>
+			</div>
 		{{/datasets}}
 	</form>
 	{% endraw %}
