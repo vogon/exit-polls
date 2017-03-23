@@ -82,11 +82,58 @@ var kerry2004 = [
 	{ pctileLow: 1, dem: 0.41, gop: 0.58 }
 ];
 
+var gore2000 = [
+	{ nominalLow: 0, pctileLow: 0,
+		dem: 0.58, gop: 0.38, ind1: 0.01, ind2: 0.04 },
+	{ nominalLow: 15000, pctileLow: 0.07,
+		dem: 0.54, gop: 0.42, ind1: 0.01, ind2: 0.03 },
+	{ nominalLow: 30000, pctileLow: 0.23,
+		dem: 0.49, gop: 0.48, ind1: 0.01, ind2: 0.02 },
+	{ nominalLow: 50000, pctileLow: 0.47,
+		dem: 0.46, gop: 0.51, ind1: 0.01, ind2: 0.02 },
+	{ nominalLow: 75000, pctileLow: 0.72,
+		dem: 0.46, gop: 0.52, ind1: 0.00, ind2: 0.02 },
+	{ nominalLow: 10000, pctileLow: 0.85,
+		dem: 0.43, gop: 0.55, ind1: 0.00, ind2: 0.03 },
+	{ pctileLow: 1, dem: 0.43, gop: 0.55 }
+];
+
+var clinton1996 = [
+	{ nominalLow: 0, pctileLow: 0, dem: 0.60, gop: 0.29, ind: 0.11 },
+	{ nominalLow: 15000, pctileLow: 0.11, 
+		dem: 0.54, gop: 0.37, ind: 0.09 },
+	{ nominalLow: 30000, pctileLow: 0.34,
+		dem: 0.49, gop: 0.41, ind: 0.10 },
+	{ nominalLow: 50000, pctileLow: 0.61,
+		dem: 0.47, gop: 0.46, ind: 0.07 },
+	{ nominalLow: 75000, pctileLow: 0.82,
+		dem: 0.45, gop: 0.49, ind: 0.07 },
+	{ nominalLow: 100000, pctileLow: 0.91,
+		dem: 0.39, gop: 0.55, ind: 0.06 },
+	{ pctileLow: 1, dem: 0.39, gop: 0.55 }
+];
+
+var clinton1992 = [
+	{ nominalLow: 0, pctileLow: 0, dem: 0.58, gop: 0.23, ind: 0.19 },
+	{ nominalLow: 15000, pctileLow: 0.14, 
+		dem: 0.45, gop: 0.35, ind: 0.20 },
+	{ nominalLow: 30000, pctileLow: 0.38,
+		dem: 0.41, gop: 0.38, ind: 0.21 },
+	{ nominalLow: 50000, pctileLow: 0.68,
+		dem: 0.40, gop: 0.41, ind: 0.18 },
+	{ nominalLow: 75000, pctileLow: 0.88,
+		dem: 0.36, gop: 0.48, ind: 0.16 },
+	{ pctileLow: 1, dem: 0.36, gop: 0.48 }
+];
+
 var datasets = [
 	{ id: "clinton2016", friendly: "Clinton 2016", data: clinton2016 },
 	{ id: "obama2012", friendly: "Obama 2012", data: obama2012 },
 	{ id: "obama2008", friendly: "Obama 2008", data: obama2008 },
-	{ id: "kerry2004", friendly: "Kerry 2004", data: kerry2004 }
+	{ id: "kerry2004", friendly: "Kerry 2004", data: kerry2004 },
+	{ id: "gore2000", friendly: "Gore 2000", data: gore2000 },
+	{ id: "clinton1996", friendly: "Clinton 1996", data: clinton1996 },
+	{ id: "clinton1992", friendly: "Clinton 1992", data: clinton1992 }
 ];
 
 var width = 800, height = 600;
